@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier Schools Exhibit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen">
+    <header id="main-header" class="bg-white shadow-md py-2 fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#">
+                <img src="./assets/logo.png" alt="Premier Schools Exhibition Logo" class="h-20 w-auto">
+            </a>
+            <a href="#"
+                class="flex items-center font-semibold text-sm rounded-md overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                <span
+                    class="register-btn-icon bg-indigo-900 text-white px-[10px] py-[10px] flex items-center justify-center transition-colors duration-300">
+                    <span>↗</span>
+                </span>
+                <span
+                    class="register-btn-text bg-white text-indigo-900 border-2 border-indigo-900 px-5 py-2 tracking-wider transition-colors duration-300">
+                    REGISTER NOW
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <div style="height: 96px;"></div>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <h1>Discover Gurugram’s</h1>
+                <h1>Top <span>30+</span> Schools</h1>
+                <p class="sub">ALL IN ONE PLACE</p>
+                <div class="pill">
+                    <div class="pill-item">
+                        <strong>Apparel House,</strong>
+                        <span>Sec 44, Gurugram</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="pill-item">
+                        <strong>2–3 August 2025</strong>
+                        <span>Sat–Sun | 10AM – 6PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loop-area">
+                <div class="loop-column">
+                    <div class="oval tall"><img src="./assets/16.png" alt="Girl reading" /></div>
+                    <div class="oval tall"><img src="./assets/15.png" alt="Smiling girl" /></div>
+                    <div class="oval tall"><img src="./assets/17.png" alt="Student in lab" /></div>
+                    <div class="oval tall"><img src="./assets/16.png" alt="Girl reading" /></div>
+                    <div class="oval tall"><img src="./assets/15.png" alt="Smiling girl" /></div>
+                    <div class="oval tall"><img src="./assets/17.png" alt="Student in lab" /></div>
+                </div>
+                <div class="loop-column">
+                    <div class="oval tall"><img src="./assets/19.png" alt="Students walking" /></div>
+                    <div class="oval tall"><img src="./assets/20.png" alt="Girl portrait" /></div>
+                    <div class="oval tall"><img src="./assets/21.png" alt="Boy smiling" /></div>
+                    <div class="oval tall"><img src="./assets/19.png" alt="Students walking" /></div>
+                    <div class="oval tall"><img src="./assets/20.png" alt="Girl portrait" /></div>
+                    <div class="oval tall"><img src="./assets/21.png" alt="Boy smiling" /></div>
+                </div>
+                <div class="loop-column">
+                    <div class="oval tall"><img src="./assets/23.png" alt="Boy with ball" /></div>
+                    <div class="oval tall"><img src="./assets/24.png" alt="Girl playing golf" /></div>
+                    <div class="oval tall"><img src="./assets/25.png" alt="Girl on swing" /></div>
+                    <div class="oval tall"><img src="./assets/23.png" alt="Boy with ball" /></div>
+                    <div class="oval tall"><img src="./assets/24.png" alt="Girl playing golf" /></div>
+                    <div class="oval tall"><img src="./assets/25.png" alt="Girl on swing" /></div>
+                </div>
+            </div>
+            <aside class="enquiry">
+                <h3>Enquire Now</h3>
+                <form class="enquiry-form" onsubmit="return false">
+                    <input type="text" placeholder="Parent's Name" />
+                    <input type="tel" placeholder="Phone Number" />
+                    <input type="text-area" placeholder="Which grade are you looking for?" />
+                    <a href="#" class="flex items-center font-semibold text-sm overflow-hidden">
+                        <span
+                            class="bg-white text-[#3b167a] px-[10px] py-[10px] flex items-center justify-center rounded-tl-none rounded-tr-none rounded-bl-none">
+                            <span>↗</span>
+                        </span>
+                        <span
+                            class="bg-[#3b167a] text-white border-2 border-white px-5 py-2 tracking-wider rounded-tl-none rounded-tr-none rounded-bl-none">
+                            Submit
+                        </span>
+                    </a>
+                </form>
+            </aside>
+        </div>
+    </section>
+
+    <main class="wrap" aria-label="Achievements banner">
+        <picture>
+            <source srcset="./assets/recognitionDesktop.png" media="(min-width: 641px)" />
+            <img src="./assets/recognitionMobile.png"
+                alt="Trusted by 1 Million+ Parents, 22+ Years of Legacy, 500+ Participating Schools, 17 Cities Across the Globe"
+                width="760" height="450" loading="eager" decoding="async" />
+        </picture>
+    </main>
+
+    <section class="partners" aria-label="Participating Schools Logos with continuous animation">
+        <div class="wrap">
+            <h2>Participating Schools</h2>
+            <div class="slider" tabindex="0">
+                <div class="slide-track top">
+                    <div class="logo-item"><img src="./assets/BlueBellsPublicSchool.png"
+                            alt="Blue Bells Public School" /></div>
+                    <div class="logo-item"><img src="./assets/BeansproutsPrePrimary.png"
+                            alt="Beansprouts Pre-Primary" /></div>
+                    <div class="logo-item"><img src="./assets/TheBeaconSchool.png" alt="The Beacon School" /></div>
+                    <div class="logo-item"><img src="./assets/GDGoenkaWorldSchool.png" alt="GD Goenka World School" />
+                    </div>
+                    <div class="logo-item"><img src="./assets/GDGoenkaHighSchool.png" alt="GD Goenka High School" />
+                    </div>
+
+                    <div class="logo-item"><img src="./assets/DelhiPublicSchool.png"
+                            alt="Delhi Public School Gurugram Sector 67A" /></div>
+                    <div class="logo-item"><img src="./assets/SatyaSchool.png" alt="Satya School" /></div>
+                    <div class="logo-item"><img src="./assets/TheVenkateshwarSchool.png"
+                            alt="The Venkateshwar School Gurugram Sector 93" /></div>
+                    <div class="logo-item"><img src="./assets/heiSchoolsGurugramSector.png"
+                            alt="hei Schools Gurugram Sector 49" /></div>
+
+                    <div class="logo-item"><img src="./assets/ManavRachna.png" alt="Manav Rachna" /></div>
+                    <div class="logo-item"><img src="./assets/DharavHighSchool.png" alt="Dharav High School Gurugram" />
+                    </div>
+                    <div class="logo-item"><img src="./assets/TheBlueBellsSchool.png" alt="The Blue Bells School" />
+                    </div>
+                </div>
+            </div>
+            <div class="slider" tabindex="0">
+                <div class="slide-track bottom">
+                    <div class="logo-item"><img src="./assets/BlueBellsPublicSchool.png"
+                            alt="Blue Bells Public School" /></div>
+                    <div class="logo-item"><img src="./assets/BeansproutsPrePrimary.png"
+                            alt="Beansprouts Pre-Primary" /></div>
+                    <div class="logo-item"><img src="./assets/TheBeaconSchool.png" alt="The Beacon School" /></div>
+                    <div class="logo-item"><img src="./assets/GDGoenkaWorldSchool.png" alt="GD Goenka World School" />
+                    </div>
+                    <div class="logo-item"><img src="./assets/GDGoenkaHighSchool.png" alt="GD Goenka High School" />
+                        <div class="logo-item"><img src="./assets/BlueBellsPublicSchool.png"
+                                alt="Blue Bells Public School" /></div>
+                    </div>
+
+                    <div class="logo-item"><img src="./assets/DelhiPublicSchool.png"
+                            alt="Delhi Public School Gurugram Sector 67A" /></div>
+                    <div class="logo-item"><img src="./assets/SatyaSchool.png" alt="Satya School" /></div>
+                    <div class="logo-item"><img src="./assets/TheVenkateshwarSchool.png"
+                            alt="The Venkateshwar School Gurugram Sector 93" /></div>
+                    <div class="logo-item"><img src="./assets/heiSchoolsGurugramSector.png"
+                            alt="hei Schools Gurugram Sector 49" /></div>
+
+                    <div class="logo-item"><img src="./assets/ManavRachna.png" alt="Manav Rachna" /></div>
+                    <div class="logo-item"><img src="./assets/DharavHighSchool.png" alt="Dharav High School Gurugram" />
+                    </div>
+                    <div class="logo-item"><img src="./assets/TheBlueBellsSchool.png" alt="The Blue Bells School" />
+                        <div class="logo-item"><img src="./assets/BlueBellsPublicSchool.png"
+                                alt="Blue Bells Public School" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="school-choice-wrap">
+        <h2 class="school-choice-title">Choose the School That Fits You Best</h2>
+        <div class="school-choice-grid" aria-label="School categories">
+            <article class="school-card">
+                <img src="./assets/PreSchoolsAndEarlyLearningCentres.png" alt="Students reading in a library" />
+                <div class="school-card-content">
+                    <h3>Pre-Schools &amp; Early Learning Centres</h3>
+                    <p>Nurturing foundational skills for toddlers and pre‑primary children.</p>
+                </div>
+            </article>
+            <article class="school-card">
+                <img src="./assets/K12DaySchools.png" alt="Smiling student with backpack" />
+                <div class="school-card-content">
+                    <h3>K–12 CBSE Day Schools</h3>
+                    <p>Reputed schools offering complete schooling from Kindergarten to Grade 12.</p>
+                </div>
+            </article>
+            <article class="school-card">
+                <img src="./assets/HeritagetoNewAgeSchools.png" alt="Students in a science lab" />
+                <div class="school-card-content">
+                    <h3>Heritage to New‑Age Schools</h3>
+                    <p>Time‑tested schools to innovative pedagogy, tech‑enabled, future‑ready schools.</p>
+                </div>
+            </article>
+            <article class="school-card">
+                <img src="./assets/InternationalCurriculumSchools.png" alt="Students discussing in a dorm room" />
+                <div class="school-card-content">
+                    <h3>International Curriculum Schools</h3>
+                    <p>Offering IB, Cambridge, Finnish and other global curricula with a global learning environment.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="exciting-hero" aria-labelledby="hero-heading">
+        <img class="exciting-hero__img" src="./assets/exitingOpp.png" alt="Parents consulting at a school event" />
+        <div class="exciting-hero__shade" aria-hidden="true"></div>
+        <div class="exciting-hero__content">
+            <i class="exciting-eyebrow">Exciting Opportunities for Parents!</i>
+            <h1 id="hero-heading" class="exciting-title">Pre-schedule Your<br />School Appointments</h1>
+            <i class="exciting-subtitle">To Avoid Rush</i>
+            <div>
+                <a href="#" class="flex items-center font-semibold text-sm overflow-hidden">
+                    <span
+                        class="bg-[#3b167a] text-white px-[10px] py-[10px] flex items-center justify-center rounded-tl-none rounded-tr-none rounded-bl-none">
+                        <span>↗</span>
+                    </span>
+                    <span
+                        class="bg-transparent text-[#3b167a] border-2 border-[#3b167a] px-5 py-2  tracking-wider rounded-tl-none rounded-tr-none rounded-bl-none">
+                        PRE-SCHEDULE NOW
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative bg-indigo-900 pt-16 lg:pt-20 pb-24 lg:pb-32">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white tracking-wider">What Makes This
+                Exhibition a Must-Visit</h2>
+
+            <div class="overflow-hidden">
+                <div id="carousel-track" class="flex -mx-4 transition-transform duration-500 ease-in-out">
+
+                    <div class="carousel-card flex-shrink-0 px-4">
+                        <div class="bg-violet-200 p-5 rounded-xl shadow-lg text-left flex flex-col h-full"
+                            style="background-color: #EDE8F7;">
+                            <div class="mb-6">
+                                <img src="./assets/icon-1.png" alt="Admissions & Counselling Icon" class="w-12 h-12">
+                            </div>
+                            <h3 class="font-bold text-xl mb-2 text-indigo-900">On-the-Spot Admissions & Counselling</h3>
+                            <p class="text-base text-gray-700">Save time with instant applications and expert guidance
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card flex-shrink-0 px-4">
+                        <div class="bg-violet-200 p-5 rounded-xl shadow-lg text-left flex flex-col items-start h-full">
+                            <div class="mb-6">
+                                <img src="./assets/icon-2.png" alt="Compare Curriculum & Pedagogy Icon"
+                                    class="w-12 h-12">
+                            </div>
+                            <h3 class="font-bold text-lg mb-2 text-indigo-900">Compare Curriculum & Pedagogy</h3>
+                            <p class="text-sm text-indigo-900">Understand the differences between CBSE, ICSE, IB,
+                                Cambridge,
+                                Finnish & more.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card flex-shrink-0 px-4">
+                        <div class="bg-violet-200 p-5 rounded-xl shadow-lg text-left flex flex-col items-start h-full">
+                            <div class="mb-6">
+                                <img src="./assets/icon-3.png" alt="Fee Structures Icon" class="w-12 h-12">
+                            </div>
+                            <h3 class="font-bold text-lg mb-2 text-indigo-900">Get Exclusive Fee Structures & Offers
+                            </h3>
+                            <p class="text-sm text-indigo-900">Access transparent information and avail offers.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card flex-shrink-0 px-4">
+                        <div class="bg-violet-200 p-5 rounded-xl shadow-lg text-left flex flex-col items-start h-full">
+                            <div class="mb-6">
+                                <img src="./assets/icon-4.png" alt="Explore Schools Offerings Icon" class="w-12 h-12">
+                            </div>
+                            <h3 class="font-bold text-lg mb-2 text-indigo-900">Explore Schools Offerings</h3>
+                            <p class="text-sm text-indigo-900">Preview infrastructure, co-curricular, teaching
+                                methodology
+                                and culture.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card flex-shrink-0 px-4">
+                        <div class="bg-violet-200 p-5 rounded-xl shadow-lg text-left flex flex-col items-start h-full">
+                            <div class="mb-6">
+                                <img src="./assets/icon-5.png" alt="On-the-Spot Counselling Icon" class="w-12 h-12">
+                            </div>
+                            <h3 class="font-bold text-lg mb-2 text-indigo-900">On-the-Spot Counselling</h3>
+                            <p class="text-sm text-indigo-900">Save time with application guidance.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center mt-12 gap-4">
+                <button id="prev-btn"
+                    class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white/30 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg>
+                </button>
+                <button id="next-btn"
+                    class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white/30 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div style="position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; line-height: 0;">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none" style="position: relative; display: block; width: 100%; height: 80px;">
+                <path d="M600,120A600,600,0,0,1,0,60V0h1200v60A600,600,0,0,1,600,120Z" style="fill:#FFFFFF;"></path>
+            </svg>
+        </div>
+    </section>
+    <section class="bg-indigo-900 text-white pt-20 pb-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-y-10 gap-x-8">
+
+
+                <div class="flex justify-center md:justify-start">
+                    <img src="./assets/logo.png" alt="Premier Schools Exhibition Logo" class="w-48">
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="bg-white/10 p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">Corporate Office:</h4>
+                        <p class="text-sm text-gray-300">Suite B-5, Ballygunge Park Tower,<br>67B Ballygunge Circular
+                            Road,<br>Kolkata - 700019</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="bg-white/10 p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">Ahmedabad Office:</h4>
+                        <p class="text-sm text-gray-300">12/AA, Swastik Chambers, Near CU Shah College, Ashram
+                            Road,<br>Ahmedabad - 380009</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="bg-white/10 p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.28 1.465l-2.087.93a11.934 11.934 0 0 0 6.095 6.095l.93-2.087a1.454 1.454 0 0 1 1.466.281l2.296 1.795a1.745 1.745 0 0 1 .163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2">Call us on</h4>
+                        <p class="text-sm text-gray-300">9674805912<br>9674585012</p>
+                    </div>
+                </div>
+
+
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="font-bold text-lg mb-2">Follow us on</h4>
+                    <div class="flex gap-3">
+
+                        <a href="#" class="bg-white/10 p-3 rounded-lg hover:bg-white/20 transition-colors"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.282.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.231 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg></a>
+                        <a href="https://facebook.com/yourhandle"
+                            class="bg-white/10 p-3 rounded-lg hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/60"
+                            aria-label="Follow on Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-facebook align-middle" viewBox="0 0 16 16" role="img" aria-hidden="true">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0 0 3.603 0 8.049c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                        </a>
+
+
+
+                        <a href="https://youtube.com/@yourhandle"
+                            class="bg-white/10 p-3 rounded-lg hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/60"
+                            aria-label="Subscribe on YouTube" target="_blank" rel="noopener noreferrer">
+
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256"
+                                fill="none" role="img" aria-hidden="true" class="align-middle">
+                                <g transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                                    stroke="currentColor" stroke-width="6" vector-effect="non-scaling-stroke">
+
+                                    <path
+                                        d="M 45 15.5 L 45 15.5 c 0.279 0 27.959 0.021 34.646 1.813 c 3.184 0.851 5.69 3.357 6.542 6.542 C 87.978 30.537 88 44.856 88 45 c 0 0.144 -0.022 14.463 -1.813 21.146 c -0.851 3.184 -3.357 5.69 -6.542 6.542 C 72.959 74.479 45.279 74.5 45 74.5 c -0.279 0 -27.959 -0.021 -34.646 -1.813 c -3.184 -0.851 -5.69 -3.357 -6.542 -6.542 C 2.022 59.463 2 45.144 2 45 c 0 -0.144 0.022 -14.463 1.813 -21.146 c 0.851 -3.184 3.357 -5.69 6.542 -6.542 C 17.041 15.521 44.721 15.5 45 15.5 M 45 13.5 c 0 0 -28.144 0 -35.162 1.881 c -3.872 1.035 -6.922 4.085 -7.957 7.957 C 0 30.356 0 45 0 45 s 0 14.644 1.881 21.662 c 1.035 3.872 4.085 6.922 7.957 7.957 C 16.856 76.5 45 76.5 45 76.5 s 28.144 0 35.162 -1.881 c 3.872 -1.035 6.922 -4.085 7.957 -7.957 C 90 59.644 90 45 90 45 s 0 -14.644 -1.881 -21.662 c -1.035 -3.872 -4.085 -6.922 -7.957 -7.957 C 73.144 13.5 45 13.5 45 13.5 L 45 13.5 z" />
+
+                                    <path
+                                        d="M 38 34.964 L 55.382 45 L 38 55.036 V 34.964 M 36 31.5 v 27 L 59.382 45 L 36 31.5 L 36 31.5 z" />
+                                </g>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-gray-600 py-6">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>Copyright © 2025 | All rights reserved. Premier Schools Exhibition</p>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.getElementById('main-header');
+
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const header = document.getElementById('main-header');
+            if (header) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                });
+            }
+
+
+            const track = document.getElementById('carousel-track');
+            if (track) {
+                const prevBtn = document.getElementById('prev-btn');
+                const nextBtn = document.getElementById('next-btn');
+                let currentIndex = 0;
+                let cardsToShow = 3.25;
+
+                const updateTotalSlides = () => {
+                    const screenWidth = window.innerWidth;
+                    if (screenWidth < 640) {
+                        cardsToShow = 1.25;
+                    } else if (screenWidth < 1024) {
+                        cardsToShow = 2.25;
+                    } else {
+                        cardsToShow = 3.25;
+                    }
+                    if (currentIndex > maxIndex()) {
+                        currentIndex = maxIndex();
+                    }
+                    updateCarousel(true);
+                };
+
+                const maxIndex = () => {
+                    const totalCards = track.children.length;
+                    return Math.ceil(totalCards - cardsToShow);
+                };
+
+                function updateCarousel(instant = false) {
+                    if (!track.querySelector('.carousel-card')) return;
+
+                    if (instant) track.style.transition = 'none';
+                    const cardWidth = track.querySelector('.carousel-card').offsetWidth;
+                    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+                    if (instant) {
+                        setTimeout(() => {
+                            track.style.transition = 'transform 0.5s ease-in-out';
+                        }, 50);
+                    }
+                    updateButtons();
+                }
+
+                function updateButtons() {
+                    prevBtn.disabled = currentIndex === 0;
+                    nextBtn.disabled = currentIndex >= maxIndex();
+                }
+
+                nextBtn.addEventListener('click', () => {
+                    if (currentIndex < maxIndex()) {
+                        currentIndex++;
+                        updateCarousel();
+                    }
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        updateCarousel();
+                    }
+                });
+
+                window.addEventListener('resize', updateTotalSlides);
+                updateTotalSlides();
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
