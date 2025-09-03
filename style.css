@@ -323,7 +323,6 @@ body {
     }
 }
 
-
 main.wrap {
     max-width: 1400px;
     margin: auto;
@@ -675,6 +674,7 @@ main.wrap img {
         font-size: clamp(1rem, 1.6vw, 1.2rem);
     }
 }
+
 
 header.scrolled {
     background-color: var(--card);

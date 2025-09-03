@@ -8,11 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="min-h-screen">
+
     <header id="main-header" class="bg-white shadow-md py-2 fixed w-full top-0 z-50 transition-all duration-300">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="#">
@@ -22,7 +25,7 @@
                 class="flex items-center font-semibold text-sm rounded-md overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <span
                     class="register-btn-icon bg-indigo-900 text-white px-[10px] py-[10px] flex items-center justify-center transition-colors duration-300">
-                    <span>↗</span>
+                    <span aria-hidden="true">↗</span>
                 </span>
                 <span
                     class="register-btn-text bg-white text-indigo-900 border-2 border-indigo-900 px-5 py-2 tracking-wider transition-colors duration-300">
@@ -82,9 +85,15 @@
             <aside class="enquiry">
                 <h3>Enquire Now</h3>
                 <form class="enquiry-form" onsubmit="return false">
-                    <input type="text" placeholder="Parent's Name" />
-                    <input type="tel" placeholder="Phone Number" />
-                    <input type="text-area" placeholder="Which grade are you looking for?" />
+                    <label for="parent-name" class="sr-only">Parent's Name</label>
+                    <input id="parent-name" type="text" placeholder="Parent's Name" />
+
+                    <label for="phone-number" class="sr-only">Phone Number</label>
+                    <input id="phone-number" type="tel" placeholder="Phone Number" />
+
+                    <label for="grade-enquiry" class="sr-only">Which grade are you looking for?</label>
+                    <textarea id="grade-enquiry" placeholder="Which grade are you looking for?"></textarea>
+
                     <a href="#" class="flex items-center font-semibold text-sm overflow-hidden">
                         <span
                             class="bg-white text-[#3b167a] px-[10px] py-[10px] flex items-center justify-center rounded-tl-none rounded-tr-none rounded-bl-none">
@@ -95,10 +104,12 @@
                             Submit
                         </span>
                     </a>
+
                 </form>
             </aside>
         </div>
     </section>
+
 
     <main class="wrap" aria-label="Achievements banner">
         <picture>
@@ -108,6 +119,7 @@
                 width="760" height="450" loading="eager" decoding="async" />
         </picture>
     </main>
+
 
     <section class="partners" aria-label="Participating Schools Logos with continuous animation">
         <div class="wrap">
@@ -149,8 +161,6 @@
                     <div class="logo-item"><img src="./assets/GDGoenkaWorldSchool.png" alt="GD Goenka World School" />
                     </div>
                     <div class="logo-item"><img src="./assets/GDGoenkaHighSchool.png" alt="GD Goenka High School" />
-                        <div class="logo-item"><img src="./assets/BlueBellsPublicSchool.png"
-                                alt="Blue Bells Public School" /></div>
                     </div>
 
                     <div class="logo-item"><img src="./assets/DelhiPublicSchool.png"
@@ -165,40 +175,41 @@
                     <div class="logo-item"><img src="./assets/DharavHighSchool.png" alt="Dharav High School Gurugram" />
                     </div>
                     <div class="logo-item"><img src="./assets/TheBlueBellsSchool.png" alt="The Blue Bells School" />
-                        <div class="logo-item"><img src="./assets/BlueBellsPublicSchool.png"
-                                alt="Blue Bells Public School" /></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <section class="school-choice-wrap">
         <h2 class="school-choice-title">Choose the School That Fits You Best</h2>
         <div class="school-choice-grid" aria-label="School categories">
             <article class="school-card">
-                <img src="./assets/PreSchoolsAndEarlyLearningCentres.png" alt="Students reading in a library" />
+                <img src="./assets/PreSchoolsAndEarlyLearningCentres.png" alt="Students reading in a library"
+                    loading="lazy" />
                 <div class="school-card-content">
                     <h3>Pre-Schools &amp; Early Learning Centres</h3>
                     <p>Nurturing foundational skills for toddlers and pre‑primary children.</p>
                 </div>
             </article>
             <article class="school-card">
-                <img src="./assets/K12DaySchools.png" alt="Smiling student with backpack" />
+                <img src="./assets/K12DaySchools.png" alt="Smiling student with backpack" loading="lazy" />
                 <div class="school-card-content">
                     <h3>K–12 CBSE Day Schools</h3>
                     <p>Reputed schools offering complete schooling from Kindergarten to Grade 12.</p>
                 </div>
             </article>
             <article class="school-card">
-                <img src="./assets/HeritagetoNewAgeSchools.png" alt="Students in a science lab" />
+                <img src="./assets/HeritagetoNewAgeSchools.png" alt="Students in a science lab" loading="lazy" />
                 <div class="school-card-content">
                     <h3>Heritage to New‑Age Schools</h3>
                     <p>Time‑tested schools to innovative pedagogy, tech‑enabled, future‑ready schools.</p>
                 </div>
             </article>
             <article class="school-card">
-                <img src="./assets/InternationalCurriculumSchools.png" alt="Students discussing in a dorm room" />
+                <img src="./assets/InternationalCurriculumSchools.png" alt="Students discussing in a dorm room"
+                    loading="lazy" />
                 <div class="school-card-content">
                     <h3>International Curriculum Schools</h3>
                     <p>Offering IB, Cambridge, Finnish and other global curricula with a global learning environment.
@@ -208,27 +219,24 @@
         </div>
     </section>
 
-    <section class="exciting-hero" aria-labelledby="hero-heading">
-        <img class="exciting-hero__img" src="./assets/exitingOpp.png" alt="Parents consulting at a school event" />
-        <div class="exciting-hero__shade" aria-hidden="true"></div>
-        <div class="exciting-hero__content">
-            <i class="exciting-eyebrow">Exciting Opportunities for Parents!</i>
-            <h1 id="hero-heading" class="exciting-title">Pre-schedule Your<br />School Appointments</h1>
-            <i class="exciting-subtitle">To Avoid Rush</i>
-            <div>
-                <a href="#" class="flex items-center font-semibold text-sm overflow-hidden">
-                    <span
-                        class="bg-[#3b167a] text-white px-[10px] py-[10px] flex items-center justify-center rounded-tl-none rounded-tr-none rounded-bl-none">
-                        <span>↗</span>
-                    </span>
-                    <span
-                        class="bg-transparent text-[#3b167a] border-2 border-[#3b167a] px-5 py-2  tracking-wider rounded-tl-none rounded-tr-none rounded-bl-none">
-                        PRE-SCHEDULE NOW
-                    </span>
-                </a>
-            </div>
+
+    <section class="wrap exciting-hero" aria-label="Exciting opportunities hero">
+        <picture>
+            <source srcset="./assets/exitingOpp.png" media="(min-width: 641px)" />
+            <img src="./assets/mobileOpp.png" alt="Parents consulting at a school event" width="1440" height="725"
+                loading="eager" decoding="async" />
+        </picture>
+        <div class="hero-content" aria-labelledby="hero-title">
+            <span class="eyebrow">Exciting Opportunities for Parents!</span>
+            <h2 id="hero-title" class="title">Pre-schedule Your<br />School Appointments</h2>
+            <span class="subtitle">To Avoid Rush</span>
+            <a class="cta" href="#" aria-label="Pre-schedule now">
+                <span class="cta__icon" aria-hidden="true">↗</span>
+                <span class="cta__text">PRE-SCHEDULE NOW</span>
+            </a>
         </div>
     </section>
+
 
     <section class="relative bg-indigo-900 pt-16 lg:pt-20 pb-24 lg:pb-32">
         <div class="container mx-auto px-4">
@@ -237,10 +245,8 @@
 
             <div class="overflow-hidden">
                 <div id="carousel-track" class="flex -mx-4 transition-transform duration-500 ease-in-out">
-
                     <div class="carousel-card flex-shrink-0 px-4">
-                        <div class="bg-violet-200 p-5 rounded-xl shadow-lg text-left flex flex-col h-full"
-                            style="background-color: #EDE8F7;">
+                        <div class="bg-violet-200 p-5 rounded-xl shadow-lg text-left flex flex-col h-full">
                             <div class="mb-6">
                                 <img src="./assets/icon-1.png" alt="Admissions & Counselling Icon" class="w-12 h-12">
                             </div>
@@ -249,7 +255,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="carousel-card flex-shrink-0 px-4">
                         <div class="bg-violet-200 p-5 rounded-xl shadow-lg text-left flex flex-col items-start h-full">
                             <div class="mb-6">
@@ -262,7 +267,6 @@
                                 Finnish & more.</p>
                         </div>
                     </div>
-
                     <div class="carousel-card flex-shrink-0 px-4">
                         <div class="bg-violet-200 p-5 rounded-xl shadow-lg text-left flex flex-col items-start h-full">
                             <div class="mb-6">
@@ -273,7 +277,6 @@
                             <p class="text-sm text-indigo-900">Access transparent information and avail offers.</p>
                         </div>
                     </div>
-
                     <div class="carousel-card flex-shrink-0 px-4">
                         <div class="bg-violet-200 p-5 rounded-xl shadow-lg text-left flex flex-col items-start h-full">
                             <div class="mb-6">
@@ -285,7 +288,6 @@
                                 and culture.</p>
                         </div>
                     </div>
-
                     <div class="carousel-card flex-shrink-0 px-4">
                         <div class="bg-violet-200 p-5 rounded-xl shadow-lg text-left flex flex-col items-start h-full">
                             <div class="mb-6">
@@ -295,13 +297,13 @@
                             <p class="text-sm text-indigo-900">Save time with application guidance.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
 
             <div class="flex justify-center items-center mt-12 gap-4">
                 <button id="prev-btn"
-                    class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white/30 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                    class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white/30 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    aria-label="Previous Slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         class="bi bi-arrow-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -309,7 +311,8 @@
                     </svg>
                 </button>
                 <button id="next-btn"
-                    class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white/30 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                    class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center hover:bg-white/30 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    aria-label="Next Slide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         class="bi bi-arrow-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -326,11 +329,11 @@
             </svg>
         </div>
     </section>
-    <section class="bg-indigo-900 text-white pt-20 pb-16">
+
+
+    <footer class="bg-indigo-900 text-white pt-20 pb-16">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-y-10 gap-x-8">
-
-
                 <div class="flex justify-center md:justify-start">
                     <img src="./assets/logo.png" alt="Premier Schools Exhibition Logo" class="w-48">
                 </div>
@@ -369,13 +372,11 @@
                         <p class="text-sm text-gray-300">9674805912<br>9674585012</p>
                     </div>
                 </div>
-
-
                 <div class="flex flex-col items-center md:items-start">
                     <h4 class="font-bold text-lg mb-2">Follow us on</h4>
                     <div class="flex gap-3">
-
-                        <a href="#" class="bg-white/10 p-3 rounded-lg hover:bg-white/20 transition-colors"><svg
+                        <a href="#" aria-label="Follow us on Instagram"
+                            class="bg-white/10 p-3 rounded-lg hover:bg-white/20 transition-colors"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-instagram" viewBox="0 0 16 16">
                                 <path
@@ -390,54 +391,33 @@
                                     d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0 0 3.603 0 8.049c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                             </svg>
                         </a>
-
-
-
                         <a href="https://youtube.com/@yourhandle"
                             class="bg-white/10 p-3 rounded-lg hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-white/60"
                             aria-label="Subscribe on YouTube" target="_blank" rel="noopener noreferrer">
-
-
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256"
                                 fill="none" role="img" aria-hidden="true" class="align-middle">
-                                <g transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                                <g transform="translate(1.4065934065934016 1.4065934016) scale(2.81 2.81)"
                                     stroke="currentColor" stroke-width="6" vector-effect="non-scaling-stroke">
-
                                     <path
                                         d="M 45 15.5 L 45 15.5 c 0.279 0 27.959 0.021 34.646 1.813 c 3.184 0.851 5.69 3.357 6.542 6.542 C 87.978 30.537 88 44.856 88 45 c 0 0.144 -0.022 14.463 -1.813 21.146 c -0.851 3.184 -3.357 5.69 -6.542 6.542 C 72.959 74.479 45.279 74.5 45 74.5 c -0.279 0 -27.959 -0.021 -34.646 -1.813 c -3.184 -0.851 -5.69 -3.357 -6.542 -6.542 C 2.022 59.463 2 45.144 2 45 c 0 -0.144 0.022 -14.463 1.813 -21.146 c 0.851 -3.184 3.357 -5.69 6.542 -6.542 C 17.041 15.521 44.721 15.5 45 15.5 M 45 13.5 c 0 0 -28.144 0 -35.162 1.881 c -3.872 1.035 -6.922 4.085 -7.957 7.957 C 0 30.356 0 45 0 45 s 0 14.644 1.881 21.662 c 1.035 3.872 4.085 6.922 7.957 7.957 C 16.856 76.5 45 76.5 45 76.5 s 28.144 0 35.162 -1.881 c 3.872 -1.035 6.922 -4.085 7.957 -7.957 C 90 59.644 90 45 90 45 s 0 -14.644 -1.881 -21.662 c -1.035 -3.872 -4.085 -6.922 -7.957 -7.957 C 73.144 13.5 45 13.5 45 13.5 L 45 13.5 z" />
-
                                     <path
                                         d="M 38 34.964 L 55.382 45 L 38 55.036 V 34.964 M 36 31.5 v 27 L 59.382 45 L 36 31.5 L 36 31.5 z" />
                                 </g>
                             </svg>
                         </a>
-
                     </div>
-
                 </div>
             </div>
         </div>
-    </section>
-
-    <footer class="bg-white text-gray-600 py-6">
+    </footer>
+    <div class="bg-white text-gray-600 py-6">
         <div class="container mx-auto px-4 text-center text-sm">
             <p>Copyright © 2025 | All rights reserved. Premier Schools Exhibition</p>
         </div>
-    </footer>
+    </div>
+
 
     <script>
-        const header = document.getElementById('main-header');
-
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-
         document.addEventListener('DOMContentLoaded', function () {
 
             const header = document.getElementById('main-header');
@@ -518,7 +498,6 @@
         });
 
     </script>
-
 </body>
 
 </html>
